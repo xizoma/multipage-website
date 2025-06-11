@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rate Us - Zomato Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffcccc, #ffe6e6);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #e23744;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 2.5em;
+      color: #e23744;
+    }
+
+    .stars {
+      margin: 30px 0;
+    }
+
+    .stars input[type="radio"] {
+      display: none;
+    }
+
+    .stars label {
+      font-size: 50px;
+      color: gray;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: rgb(194, 248, 246);
+    }
+
+    .thank-you {
+      font-size: 1.2em;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    footer {
+      background-color: #f4a2a9;
+      color: white;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="rating.html">Rating</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Rate Our Service</h1>
+
+  <form class="stars">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">&#9733;</label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">&#9733;</label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">&#9733;</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">&#9733;</label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">&#9733;</label>
+  </form>
+
+  <div class="thank-you">We appreciate your feedback!</div>
+
+  <footer>
+    &copy; 2025 Food Restaurant Online | Designed by You ❤
+  </footer>
+
+</body>
+</html>
